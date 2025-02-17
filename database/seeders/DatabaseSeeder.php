@@ -22,7 +22,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             // RolesAndPermissionsSeeder::class,
-            VisibilityLevelsSeeder::class,
+            // VisibilityLevelsSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }
