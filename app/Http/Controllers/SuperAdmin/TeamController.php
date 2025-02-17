@@ -119,7 +119,8 @@ class TeamController extends Controller
             'status' => 'active',
         ]);
 
-        $team->members()->syncWithoutDetaching($request->members);
+        $team->members()->sync($request->members);
+
 
         $team->with('members');
 
